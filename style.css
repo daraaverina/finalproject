@@ -10,8 +10,10 @@ Color pallet:
 
 */ 
 
+
 body {
   font-family: 'Crimson Text', serif;
+  margin: 0;
 }
 
 /* Flex Boxes */
@@ -19,12 +21,21 @@ body {
 .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* Navigation */
 
 .main-header {
-    margin: 0 24px;
+    background-color: #e9ece5;
+    height: 64px;
+    margin: 0;
+}
+.main-header img {
+   border: 1px solid black;
+   margin: 0 auto;
+   height: 32px;
+   width: auto;
 }
 .nav {
     margin-top: 1.5em;
@@ -33,15 +44,16 @@ body {
 .nav a {
     display: block;
     list-style: none;
-    color: aqua;
+    color: #3b3a46;
     margin-right: 16px;
+    text-decoration: none;
 }
 
 .nav a:hover {
     color: antiquewhite;
-    
 }
-.logo {
+.logo img {
     height: 32px;
-    align-content: center;
+    width: auto;
+    margin-right: 0;
 }
