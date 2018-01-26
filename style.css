@@ -19,15 +19,22 @@ body {
 /* Flex Boxes */
 .main-header,
 .nav,
-.learn-new {
+.learn-new, 
+.information,
+.gallery,
+.flex,
+.left-side {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.text {
+.text,
+.gallery,
+.left-side {
     flex-direction: column;
     align-items: center;
 }
+
 /* Navigation */
 
 .main-header {
@@ -62,6 +69,8 @@ body {
     transition: text-decoration;
     transition-delay: 40s;
 }
+
+
 /* Learn-new */
 
 .learn-new img {
@@ -89,4 +98,61 @@ body {
     width: 60%;
     margin: 0 auto;
 }
+
+/*----------------------------------------------*/
+
+/* Information section */
+
+.information {
+    background-color: #e9ece5;
+    
+}
+.information h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 30px;
+}
+.information h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
+}
+.information p {
+  text-align: left;
+  font-weight: 300;
+  font-size: 14px;
+}
+.information p span {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.left-side {
+    width: 60%;
+    margin: 32px 24px; 
+}
+.left-side img {
+    width: 100%;
+}
+.gallery {
+    width: 40%;
+    border-left: 1px solid #b3c2bf;
+}
+.gallery img {
+    margin: 16px;
+    width: 35%;
+    height: auto;
+}
+.content h2 {
+    margin-bottom: 8px;
+}
+.content p {
+    margin-bottom: 8px;
+}
+.content p span {
+    margin-top: 8px;
+}
+
+.information-guest-lecture {
+    background-color: #b3c2bf;
+}
+/*----------------------------------------------*/
 
