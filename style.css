@@ -1,6 +1,47 @@
-html {
+/* Fonts:
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Crimson Text', serif; 
 
+Color pallet: 
+#c0dfd9
+#e9ece5
+#b3c2bf
+#3b3a46
 
+*/ 
 
+body {
+  font-family: 'Crimson Text', serif;
+}
 
+/* Flex Boxes */
+.main-header,
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Navigation */
+
+.main-header {
+    margin: 0 24px;
+}
+.nav {
+    margin-top: 1.5em;
+    list-style: none;
+}
+.nav a {
+    display: block;
+    list-style: none;
+    color: aqua;
+    margin-right: 16px;
+}
+
+.nav a:hover {
+    color: antiquewhite;
+    
+}
+.logo {
+    height: 32px;
+    align-content: center;
 }
