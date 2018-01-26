@@ -20,7 +20,9 @@ body {
   overflow-x: hidden; 
 }
 
-/* Flex Boxes */
+/* ------------------------------------------- */
+/* FLEX BOXES */
+/* ------------------------------------------- */
 .main-header,
 .nav,
 .learn-new, 
@@ -39,7 +41,15 @@ body {
     align-items: center;
 }
 
-/* Navigation */
+.box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* ------------------------------------------- */
+/* NAVIGATION */
+/* ------------------------------------------- */
 
 .main-header {
     height: 64px;
@@ -70,12 +80,12 @@ body {
 .nav a:hover {
     color: #050507;
     text-decoration: underline;
-    transition: text-decoration;
-    transition-delay: 40s;
+    transition: color 0.7s;
 }
 
-
-/* Learn-new */
+/* ------------------------------------------- */
+/* LEARN NEW */
+/* ------------------------------------------- */
 
 .learn-new img {
     margin: 32px 24px;
@@ -102,29 +112,32 @@ body {
     width: 60%;
     margin: 0 auto;
 }
+.text h3:hover {
+    border: 1px solid #b3c2bf;
+    transition: border 0.3s, border-radius 0.3s ;
+}
 
-/*----------------------------------------------*/
-
-/* Information section */
+/* ------------------------------------------- */
+/* INFORMATION SECTION */
+/* ------------------------------------------- */
 
 .information {
     background-color: #e9ece5;
-    
 }
-.information h1 {
+.left-side h1 {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 30px;
 }
-.information h2 {
+.left-side h2 {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 20px;
 }
-.information p {
+.left-side p {
   text-align: left;
   font-weight: 300;
   font-size: 14px;
 }
-.information p span {
+.left-side p span {
   font-weight: 600;
   font-size: 14px;
 }
@@ -160,5 +173,60 @@ body {
     background-color: #b3c2bf;
     transition: background-color 0.7s;
 }
-/*----------------------------------------------*/
 
+/* ------------------------------------------- */
+/* COURSES */
+/* ------------------------------------------- */
+.courses h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    color: #3b3a46;
+}
+.box {
+    margin: 0 72px;
+    width: 92.5%;
+}
+.box img {
+  height: auto;
+  width: 100%;
+    
+}
+.elements {
+    width: 30%;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    background-color: rgba(179,194,191,0.7);
+}
+.elements:hover {
+    transform: scale(1.1,1.1);
+    transition: transform 0.4s;
+}
+.elements h2 {
+    margin-left: 16px;
+    text-align: left;
+    margin-top: 16px;
+    font-weight: 600;
+    color: white;
+    font-size: 32px;
+}
+.elements h3 {
+    margin-left: 16px;
+    text-align: left;
+    margin-top: 16px;
+    font-weight: 300;
+    color: white;
+    font-size: 20px;
+}
+.elements p {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 24px;
+    text-align: left;
+    margin-top: 16px;
+    font-weight: 100;
+    color: white;
+    font-size: 18px;
+}
