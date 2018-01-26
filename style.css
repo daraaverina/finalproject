@@ -13,7 +13,11 @@ Color pallet:
 
 body {
   font-family: 'Crimson Text', serif;
-  margin: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
 }
 
 /* Flex Boxes */
@@ -151,8 +155,10 @@ body {
     margin-top: 8px;
 }
 
-.information-guest-lecture {
+
+.flex:hover {
     background-color: #b3c2bf;
+    transition: background-color 0.7s;
 }
 /*----------------------------------------------*/
 
