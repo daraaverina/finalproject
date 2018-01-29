@@ -302,8 +302,10 @@ video {
     border-top: 1px solid rgba(59,58,70,0.4);
 }
 .footer ul {
+    margin-top: 16px;
     display: inline-block;}
 .footer li {
+    margin-top: 16px;
     display: inline-block;
     list-style: none;
     color: #3b3a46;
@@ -317,7 +319,7 @@ video {
 
 .terms li,
 .copyright li {
-    margin: 8px;
+    margin: 0 8px;
 }
 .terms li:hover {
     text-decoration: underline;
