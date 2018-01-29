@@ -27,27 +27,34 @@ body {
 .nav,
 .learn-new, 
 .information,
-.gallery,
-.flex,
-.left-side,
-.last {
+.gallery {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.text,
-.gallery,
-.left-side {
-    flex-direction: column;
+
+.flex,
+.now-and-then,
+.fisma {
+    display: flex;
     align-items: center;
 }
 
+.last {
+    display: flex;
+}
+.text,
+.gallery,
+.left-side,
+.boxes {
+    flex-direction: column;
+    align-items: center;
+}
 .box {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 /* ------------------------------------------- */
 /* NAVIGATION */
 /* ------------------------------------------- */
@@ -125,13 +132,10 @@ body {
 .information {
     background-color: #e9ece5;
 }
+
 .left-side h1 {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 30px;
-}
-.left-side h2 {
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 20px;
 }
 .left-side p {
   text-align: left;
@@ -236,16 +240,85 @@ body {
 /* Thesis */
 /* ------------------------------------------- */
 
-.footer {
+.main-article {
     background-color: #e9ece5;
+      margin-top: 32px;
 }
-.footer h1 {
+.main-article h1 {
    font-family: 'Julius Sans One', sans-serif;
+    font-size: 32px;
     text-align: center;
-    margin-top: 32px;
+    padding-top: 32px;
     margin-bottom: 32px;
 }
 video {
+    width: 100%;
+    height: auto;
+}
+.thesis-video {
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 24px;
     width: 60%;
-    font-size: 32px;
+    margin-bottom: 32px;
+}
+.thesis-video h2 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+.thesis-video p {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.boxes img {
+    margin: 16px;
+    width: 35%;
+    height: auto;
+}
+.boxes {
+    margin-left: 0;
+    width: 40%;
+    margin-right: 24px;
+}
+.fisma h2,
+.now-and-then h2 {
+    font-size: 20px;
+    text-align: left;
+    width: 92%
+}
+.fisma p,
+.now-and-then p {
+    font-size: 18px;
+    text-align: left;
+    width: 92%
+}
+
+
+/* ------------------------------------------- */
+/* Footer */
+/* ------------------------------------------- */
+.footer {
+    border-top: 1px solid rgba(59,58,70,0.4);
+}
+.footer ul {
+    display: inline-block;}
+.footer li {
+    display: inline-block;
+    list-style: none;
+    color: #3b3a46;
+    text-decoration: none;
+    font-size: 14px;
+}
+.copyright {
+    margin-left: 24px;
+    margin-right: 50%
+}
+
+.terms li,
+.copyright li {
+    margin: 8px;
+}
+.terms li:hover {
+    text-decoration: underline;
 }
