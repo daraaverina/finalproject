@@ -281,6 +281,14 @@ video {
     width: 40%;
     margin-right: 24px;
 }
+.fisma:hover,
+.now-and-then:hover {
+    color: white;
+    background-color: #b3c2bf;
+    transition: background-color 0.7s, color 0.7s;
+}
+
+
 .fisma h2,
 .now-and-then h2 {
     font-size: 20px;
@@ -291,9 +299,7 @@ video {
 .now-and-then p {
     font-size: 18px;
     text-align: left;
-    width: 92%
-}
-
+    width: 92%; }
 
 /* ------------------------------------------- */
 /* Footer */
